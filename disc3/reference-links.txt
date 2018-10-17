@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/stack-data-structure/
+https://www.geeksforgeeks.org/queue-data-structure/
+
+https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+
+https://www.google.com/logos/fnbx/solitaire/standalone.html
+
+https://en.wikipedia.org/wiki/Call_stack
