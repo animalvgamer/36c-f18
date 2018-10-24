@@ -2,6 +2,10 @@
 #include <sstream>
 #include <stack>
 #include <string>
+#include <utility>
+
+#include "trees.h"  // should not need this for templated file.
+                    // but cpplint complains otherwise.
 
 #define FIXED_WIDTH 6
 
@@ -56,7 +60,7 @@ void SiblingTree<T>::insertItem(SiblingTree<T>::Path p, const T& item) {
     cur_node->firstChild->data = item;
   } else {
     cur_node = cur_node->firstChild.get();
-    while(cur_node->sibling) cur_node = cur_node->sibling.get();
+    while (cur_node->sibling) cur_node = cur_node->sibling.get();
     cur_node->sibling.reset(new Node);
     cur_node->sibling->data = item;
   }

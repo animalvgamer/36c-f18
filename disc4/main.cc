@@ -16,7 +16,7 @@ int main() {
 
   while (true) {
     std::cout << tree << std::endl;
-    
+
     char command = '\0';
 
     std::cout << "[i]nsert, [r]emove, [s]et:" << std::endl;
@@ -26,7 +26,7 @@ int main() {
     switch (command) {
      case 'i':
      case 'r':
-     case 'c':
+     case 's':
       break;
      default:
       std::cout << "invalid input detected" << std::endl;
@@ -62,7 +62,7 @@ int main() {
      case 'r':
       tree.removeNode({path});
       break;
-     case 'c':
+     case 's':
       std::cout << "Enter value to set node to: ";
       std::cin >> value;
       if (std::cin.fail()) {

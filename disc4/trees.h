@@ -1,5 +1,5 @@
-#ifndef __TREES_H__
-#define __TREES_H__
+#ifndef _TREES_H_
+#define _TREES_H_
 
 #include <functional>
 #include <iostream>
@@ -27,6 +27,7 @@ class SiblingTree {
    public:
     std::vector<size_t> childIndices;
   };
+
  protected:
   std::unique_ptr<Node> root;
 
@@ -40,6 +41,7 @@ class SiblingTree {
   friend std::ostream &operator<<<T>(std::ostream& out, SiblingTree<T> &tree);
 };
 
-#include "trees.cc"
+#include "trees.cc"  // cpplint will complain about this. Templates can be
+                     // pretty annoying sometimes to find good style for.
 
-#endif
+#endif  // _TREES_H_
